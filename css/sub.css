@@ -1,0 +1,799 @@
+
+@font-face {
+    font-family: 'LotteMartDream';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+
+
+
+body {
+
+font-family: "Nanum Barun Gothic",sans-serif;
+
+}
+
+a {
+    color: #111;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    color: #0f2f5f;
+    font-weight: bold;
+    padding: 5vh 0;
+}
+
+header {
+/*    display: none;*/
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: #092043;
+
+}
+
+.headTop {
+/*    display: none;*/
+    position: relative;
+    width: 100%;
+    height: 100px;
+    /*    background-color: antiquewhite;*/
+    z-index: 9997;
+}
+
+.headTop .headTopLogo {
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+
+.search2 {
+    display: none;
+}
+
+.search {
+    position: absolute;
+    z-index: 9999;
+    right: 80px;
+    top: 30px;
+}
+
+.search > input {
+    position: absolute;
+    right: 0;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    height: 30px;
+    width: 240px;
+    color: white;
+    font-size: 13px;
+
+}
+
+.search > label {
+    /*    position: absolute;*/
+    color: white;
+    right: 0;
+    font-size: 13px;
+    width: 240px;
+    line-height: 30px;
+}
+
+.searchBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+#menu {
+    position: fixed;
+    overflow: hidden;
+        width: 645px;
+    left: -100%;
+    z-index: 9999 !important;
+     background: rgba(0, 0, 0, 0.8);
+   
+}
+
+.wrap{
+    overflow: hidden;
+
+    background-color: aqua;
+  
+}
+
+#nav {
+    position: absolute;
+    z-index: 9999;
+    top: 100px;
+    left: 80px;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+overflow-y: scroll;
+/*    background-color: aqua;*/
+}
+
+#nav a {
+    color: white;
+}
+
+#nav > li {
+
+    /*display: block;    */
+    padding: 0;
+    font-size: 20px;
+
+    /*    background-color: aqua;*/
+
+}
+
+#nav > li > a {
+    /*background-color:aqua;*/
+    line-height: 3;
+}
+
+#nav > li:hover > a,
+#nav > li.active > a,
+.sub > li:hover > a,
+.sub > li.active > a {
+    color: bisque;
+}
+
+.sub {
+    display: none;
+/*    width: 60%;*/
+    margin-left: 50px;
+}
+
+.sub > li {
+    width: 40%;
+    display: inline-block;
+    /*    background-color: antiquewhite;*/
+}
+
+.sub > li > a {
+    font-size: 16px;
+    line-height: 4;
+    font-weight: 300;
+}
+
+.menuAd {
+    position: absolute;
+    /*    background-color: aqua;*/
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    z-index: 9999;
+    width: 80%;
+}
+.menuAd img{
+    width: 100%;
+}
+.hamBtn {
+    position: absolute;
+    z-index: 99999;
+    left: 80px;
+    top: 30px;
+}
+
+.hamBtn > a {
+    display: block;
+    background-size: cover;
+    background-image: url(../images/btn_menu.png);
+    width: 30px;
+    height: 30px;
+}
+
+.hamBtn > a.close {
+    background-size: cover;
+    background-image: url(../images/btn_close.png);
+    background-repeat: no-repeat;
+
+}
+
+
+/*item*/
+.item {
+    margin-top: 16vh;
+}
+
+.item .col-md-7 {
+    padding: 0;
+}
+
+.itemLeft {}
+
+.subBanner {
+    height: 70vh;
+    /*    background-color: aqua;*/
+}
+
+.subBanner > li {
+    position: absolute;
+    display: none;
+}
+
+.subBanner > li:first-child {
+    display: block;
+}
+
+.subBanner > li img {
+    /*    height: 100%;*/
+}
+
+.subBtn > li {
+    /*    float:left;*/
+}
+
+.itemRight {
+    /*    background-color: antiquewhite; */
+    /*    height: 90vh;*/
+}
+
+.dedica {
+    color: white;
+    /*    height: 43vh;*/
+}
+
+.dedica .newText {
+    margin-bottom: 1vh;
+    width: 90px;
+    height: 31px;
+    background-repeat: no-repeat;
+    background-image: url(../images/new_text_w.png);
+}
+
+.dedica .dSub {
+    font-size: 16px;
+    margin-bottom: 1.2vh;
+}
+
+.dedica .dTitle {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.dedica .type {
+    font-size: 18px;
+    color: #dbd8cb;
+}
+
+.spec {
+    margin-top: 200px;
+}
+
+.spec > li > a {
+    display: block;
+    line-height: 3;
+    /*    background-color: aqua;*/
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.spec > li span {
+    float: right;
+}
+
+.spec .specSub {
+    display: none;
+    margin-top: 20px;
+    line-height: 22px;
+    font-size: 14px;
+    word-break: keep-all;
+}
+
+.spec .specSub.active {
+    display: block;
+}
+
+/*carousel*/
+.carousel {
+    /*    height: 100px;*/
+    margin-bottom: 20vh;
+
+
+}
+
+.carousel .subItem {}
+
+.carousel .subItem > li {
+    text-align: center;
+    font-size: 13px;
+}
+
+.subItem > li img {
+    transform: scale(0.8);
+}
+
+.subItem > li span {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    left: 50px;
+    background: #092043;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 15px;
+}
+
+.subItem > li:hover span {
+    display: block;
+}
+
+/*contents*/
+.contents {
+    text-align: center;
+    width: 100%;
+    /*    background-color: antiquewhite;*/
+}
+
+.contents .scrollNav {
+
+    /*background-color: aqua;*/
+    margin-bottom: 50px;
+
+
+}
+
+.contents .scrollNav > li {
+    margin: 0 32px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.contents .scrollNav > li:hover > a {
+    color: #0f2f5f;
+    font-weight: bold;
+    border-bottom: 1px solid #0f2f5f;
+}
+
+.contents .scrollNav > li.active > a {
+    color: #0f2f5f;
+    font-weight: bold;
+    border-bottom: 1px solid #0f2f5f;
+}
+/*coffee*/
+#coffee {
+    margin-bottom: 10vh;
+    background-image: url(../images/coffee_bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#coffee .coffeeTitle {
+
+    width: 52vw;
+    height: 50px;
+    margin: 25px auto;
+    background-image: url(../images/coffe_title.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#coffee .coffeeImg {
+    margin-top: 75px;
+}
+
+#coffee .coffeeImg > li {}
+
+#coffee .coffeeImg > li > span {
+    display: block;
+    margin-top: 10px;
+}
+
+/*tech*/
+#tech {
+    /*    width: 100%;*/
+    margin-bottom: 20vh;
+}
+
+.techSub {}
+
+.techSub > li * {
+    display: block;
+}
+
+.techSub > li > strong {
+    margin: 20px 0;
+    word-break: keep-all;
+}
+
+.techSub > li > span {
+    font-size: 15px;
+    word-break: keep-all;
+}
+
+/*menual*/
+#menual {
+    margin-bottom: 20vh;
+}
+
+.msearch {
+    position: relative;
+    width: 30vw;
+    height: 50px;
+    border: 2px solid #666;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.msearch > input {
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    width: 80%;
+    font-size: 16px;
+    border: 0;
+    background: none;
+
+}
+
+.msearch > label {
+    float: left;
+    margin: 10px 0 0 20px;
+    color: #cccccc;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.msearch .searchBtnB {
+    float: right;
+    margin: 10px 20px;
+}
+
+
+/*footer*/
+footer {
+    background: #38393b;
+
+}
+
+
+.footLogo {
+
+    padding-top: 70px;
+    margin: 0 auto;
+    width: 180px;
+
+}
+
+.footLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.footMenu {
+    width: 430px;
+    margin: 52px auto 0;
+}
+
+.footMenu > li {
+    float: left;
+    margin: 0 5px;
+}
+
+.footMenu > li > a {
+    font-size: 16px;
+    color: white;
+}
+
+address {
+    padding: 73px 0 50px 0;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.topBtn {
+    position: fixed;
+    z-index: 9999999;
+    bottom: 50px;
+    right: 40px;
+}
+
+@media screen and (max-width:1200px) {
+    .contents .scrollNav > li {
+        margin: 0 21px;
+        font-size: 20px;
+    }
+
+    .msearch {
+        width: 370px;
+    }
+
+
+    .msearch > label {
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #menu {
+        position: fixed;
+        overflow: hidden;
+        width: 80%;
+        left: -100%;
+        z-index: 10000;
+
+    }
+
+    .subBanner {
+        height: 45vh;
+    }
+
+    .spec {
+        margin-top: 170px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    header {
+        height: 400px;
+    }
+  .search {
+        right: 20px;
+    }
+    .subBanner {
+        height: 55vh;
+    }
+.spec {
+        margin-top: 100px;
+    }
+  
+#tech {
+    /* width: 100%; */
+    margin-bottom: 10vh;
+}
+    
+}
+
+@media screen and (max-width:767px) {
+    .search {
+        display: none;
+    }
+
+    .search2{
+        display: block;
+        position: absolute;
+        z-index: 999999;
+        bottom: 19vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+          border-bottom: 1px solid white;
+        width: 80%;
+        color: white;
+/*        background-color: aqua;*/
+    }
+
+    .search2 > label {
+        position: absolute;
+        color: white;
+        left: 80px;
+        bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .search2 > input {
+        position: absolute;
+        background: none;
+        border: none;
+        width: 60%;
+        font-size: 18px;
+        bottom: 10px;
+        left: 80px;
+
+        color: white;
+
+    }
+
+    .search2 .searchBtn2 {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+
+
+    }
+
+    .hamBtn {
+        position: absolute;
+        z-index: 10001;
+        left: 20px;
+        top: 30px;
+    }
+
+.hamBtn > a {
+    display: block;
+    background-size: cover;
+    background-image: url(../images/btn_menu.png);
+    width: 25px;
+    height: 25px;
+}
+
+    
+    
+    
+    #menu {
+        width: 100%;
+    }
+    #nav {
+    top: 60px;
+        left: 40px;
+   
+}
+    #nav > li{
+        font-size: 16px;
+    }
+    
+ #nav > li > a {
+    /*background-color:aqua;*/
+    line-height: 3;
+}
+    /*    dedica*/
+      .subBanner {
+        height: 45vh;
+    }
+    .dedica > p,
+    .dedica > .dTitle,
+    .dedica .type {
+        color: #444;
+    }
+    .dedica .newText { 
+    background-image: url(../images/icon_newtext.png);
+        margin-top: 30px;
+}
+    
+.spec {
+    margin-top: 20px;
+}
+    .contents .scrollNav > li {
+
+        font-size: 20px;
+    }
+
+    /*    cariusel*/
+    .carousel {
+
+        margin-bottom: 14vh;
+    }
+
+    /*    scroll*/
+    .contents .scrollNav {
+        margin-bottom: 50px;
+    }
+    #coffee{
+       
+    }
+    #coffee .coffeeTitle {
+        width: 350px;
+    }
+    /*    coffee*/
+    .coffeeText {
+        font-size: 15px;
+    }
+
+    #coffee .coffeeImg {
+        margin-top: 10px;
+    }
+
+    #coffee .coffeeImg > li > span {
+        font-size: 14px;
+    }
+
+    /*    tech*/
+    #tech {
+
+        margin-bottom: 5vh;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .techSub > li > strong {
+        font-size: 16px;
+    }
+
+    .techSub > li > span {
+        font-size: 14px;
+
+    }
+
+    /*    menual*/
+    #menual {
+        margin-bottom: 10vh;
+    }
+ .footMenu{
+/*      margin: 30px auto 0;*/
+     display: none;
+     
+    }
+
+    .footLogo {
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 100px;
+}
+    address{
+        padding:50px 0 50px 0;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:525px) {
+    .container {
+        width: 100%;
+    }
+
+
+
+    .search2 > label {
+        font-size: 14px;
+    }
+
+    .search2 > input {
+        font-size: 14px;
+    }
+
+    .sub > li {
+        display: block;
+        width: 100%;
+    }
+
+    .sub > li > a {
+        line-height: 3;
+    }
+#tech {
+    margin-bottom: 2vh;
+}
+.techSub > li > span {
+display: none;
+}
+
+}
+
+@media screen and (max-width:400px) {
+    .dedica {
+  margin-top: 20px;
+}
+    .contents .scrollNav {
+        margin-bottom: 0;}
+    .contents .scrollNav > li{
+        font-size: 18px;
+            margin: 0 10px;
+    }
+    #coffee .coffeeImg > li {
+        padding: 0;
+    }
+    .techSub>li{
+        padding:0 5px;
+    }
+    #coffee .coffeeImg > li > span{
+        display: none;
+    }
+   
+}
